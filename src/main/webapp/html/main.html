@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="../img/logo.png" alt="logo" height="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/feedback">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="text-light">
+        <div id="background-fixed"></div>
+        <div class="text-center" id="slogan">
+            <h1>Сдать лабораторную легко и быстро</h1>
+            Студенты очень любят нас, и мы отвечаем взаимностью.
+        </div>
+    </section>
+    <section>
+        <div class="text-center">
+            <h2>Students-Labs хочет помочь тебе в этом.</h2>
+            <div class="row justify-content-center">
+                <div class="col-6 bg-white rounded-3 p-3 m-3">
+                    Все мы учимся, и нам всем нужны разные вещи: кому-то нужно больше информации, кому-то - больше
+                    практики.
+                    Поэтому мы создали сообщество студентов-Labs, которое поможет тебе в обучении и саморазвитии.
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border rounded-3 p-4 m-3 ">
+            <h2>Закажите лабораторную работу уже сейчас</h2>
+            <form action="post">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Заголовок</label>
+                    <input type="text" required minlength="5" class="form-control" id="title"
+                           placeholder="Введите короткое описание задачи">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Предмет</label>
+                    <select class="form-select" name="object" id="object">
+                        <option value="physics">Программирование</option>
+                        <option value="physics">Физика</option>
+                        <option value="physics">Математика</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">Описание задачи</label>
+                    <textarea required minlength="15" class="form-control" name="description" id="description" cols="30"
+                              rows="10"
+                              placeholder="Опишите задание как можно подробнее"></textarea>
+                </div>
+                <div class="row mb-3">
+                    <label class="form-label" for="file">Прикрепите файлы</label>
+                    <div class="col">
+                        <input class="form-control" type="file" name="file" id="file">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-light">+</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">Оставьте Email и номер телефона, чтобы мы могли с вами
+                        связаться</label>
+                    <input type="email" class="form-control mb-3" name="email" id="email" placeholder="Ваш email"/>
+                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="+7" value="+7">
+                </div>
+                <button type="submit" class="btn btn-dark">Отправить</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="bg-dark text-light">
+    <hr>
+    <div class="d-flex flex-row justify-content-between">
+        <img src="../img/logo.png" alt="logo" height="40px">
+        <div class="d-flex align-items-center ">
+            © 2023 Students-Labs
+        </div>
+    </div>
+</footer>
+<script src="../js/scroll.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
